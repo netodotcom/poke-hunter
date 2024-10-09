@@ -65,7 +65,7 @@ Você precisará de instalar as seguintes ferramentas:
    ```
 3. **Crie um .env**:
 
-   Crie um dotenv e coloque
+   Crie um arquivo .env em `/backend` e coloque
    ```bash
    DATABASE_URL="postgresql://postgres:senha@localhost:5433/poke_hunter?schema=public"
    POKEAPI_URL="https://pokeapi.co/api/v2"
@@ -73,7 +73,7 @@ Você precisará de instalar as seguintes ferramentas:
    ```
 4. **Prisma**
 
-   Gere o PRisma
+   Gere o Prisma
    ```
       npx prisma generate
    ```
