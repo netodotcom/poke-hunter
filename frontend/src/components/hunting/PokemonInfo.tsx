@@ -39,15 +39,15 @@ export function PokemonInfo({ pokemon }: PokemonInfoProps) {
   }, [colors]);
 
   const getIconByStatName = (statName: string) => {
-    return <img src={`/images/${statName}.png`} alt={statName} className="w-8 h-8 bg-stone-200 rounded-full p-1" style={{ backgroundColor: colors[currentColorIndex]}}/>;
+    return <img src={`/images/${statName}.png`} alt={statName} className="w-8 h-8 bg-white rounded-full p-1" style={{ backgroundColor: colors[currentColorIndex] }}/>;
   }
   
   return (
-    <Card className="w-64 rounded-lg flex flex-col mr-2 bg-stone-200 text-black">
+    <Card className="w-64 rounded-lg flex flex-col mr-2 bg-stone-950 text-white transparent-20">
       {pokemon && (
         <>
-          <CardHeader>
-            <CardTitle className="text-2xl text-center" style={{ color: "black" }}>{pokemon.name}</CardTitle>
+          <CardHeader >
+            <CardTitle className="text-2xl text-center">{pokemon.name}</CardTitle>
           </CardHeader>
           <CardContent className="flex-grow overflow-hidden p-4" >
             <ScrollArea className="h-[calc(100vh-200px)] pr-4">
@@ -66,12 +66,12 @@ export function PokemonInfo({ pokemon }: PokemonInfoProps) {
                       <div className="flex items-center justify-between py-2">
                         <div className="flex items-center space-x-4 font-bold">
                           {getIconByStatName(stat.name)}
-                          <h3 className="text-sm capitalize">{stat.name}</h3>
+                          <h3 className="text-sm capitalize ">{stat.name}</h3>
                         </div>
                       </div>
                         {Number(stat.value) >= 100 ? <p className="text-2xl text-red-500 text-bold">{stat.value}</p> : <p className="text-xl">{stat.value}</p>}
                       </div>
-                      {index < pokemon.stats.length - 1 && <Separator style={{ backgroundColor: colors[currentColorIndex] }} className="my-3" />}
+                      {index < pokemon.stats.length - 1 && <Separator style={{ backgroundColor: 'black' }} className="my-3" />}
                     </div>
                   ))}
                 </div>
