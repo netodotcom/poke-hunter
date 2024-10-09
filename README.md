@@ -1,10 +1,5 @@
 # PokeHunter
 
-# PokeHunter
-
-
-<iframe width="600" height="400" src="https://www.youtube.com/embed/bGICKQ3RonE?showinfo=0&rel=0&modestbranding=1&fs=1" frameborder="0" allow="fullscreen"></iframe>
-
 ## Documentação
 
 ### 1. Banco de dados
