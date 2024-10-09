@@ -31,8 +31,8 @@ export default function Cloud({ count }: { count: number }) {
         <DreiCloud
           key={index}
           position={position}
-          speed={0.2}
-          opacity={0.5}
+          speed={1}
+          opacity={1}
         />
       ))}
     </>
